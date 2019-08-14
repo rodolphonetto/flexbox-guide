@@ -1,0 +1,41 @@
+.titulo-sessao {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-grey-light-1);
+}
+
+.texto-sessao {
+  font-family: 'Blinker', sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: var(--color-grey-light-1);
+}
+
+.call-to-action {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2rem;
+  color: var(--color-grey-light-1);
+}
+
+.nome-propriedade {
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--color-grey-light-1);
+  font-size: 1.8rem;
+}
+
+.valor-propriedade {
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--color-2-font);
+  font-size: 1.8rem;
+}
+
+.comentario {
+  align-self: start;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--color-grey-dark-3); 
+  font-size: 1.4rem;
+
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Titulo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Blinker:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="container">
+
+	<header class="header">
+
+	</header>
+
+	<nav class="sidebar">
+		<span class="sidebar__separador">Flex-Container</span>
+		<ul class="sidebar__lista-items">
+			<li class="sidebar__item">Display: Flex</li>
+			<li class="sidebar__item">Flex-Wrap</li>
+			<li class="sidebar__item">Flex-Direction</li>
+			<li class="sidebar__item">Justify-Content</li>
+		</ul>
+	</nav>
+
+	<section class="topico">
+		<div class="topico__explicacao">
+			<h2 class="topico__titulo titulo-sessao">Display-Flex</h2>
+			<p class="topico__texto topico__texto--sem-linha texto-sessao">
+				Por padrão os itens de blocos com display block ocupam toda a linha dentro do seu bloco, ao adicionar o display
+				flex
+				os itens passam a estar lado a lado e tanto container quanto os itens recebem novas propriedades que podem
+				ajudar a alinha-los.<br><br>
+				A principio os itens se ajustam para ficar sempre no começo do bloco e ter apenas o tamanho de seu conteudo.
+				Conforme vemos nas imagens ao lado.<br><br>
+				A direção à qual os items se alinham (horizontalmente por padrão) é chamado de main axies e o eixo que cruza o
+				main axies é chamado de
+				cross axies, caso invertamos a direção padrão o nome do eixo não muda e as propriedades que controlam são as
+				mesmas.
+			</p>
+		</div>
+		<div class="topico__exemplo">
+			<picture class="topico__img-exemplo">
+				<img src="img/display-block.PNG" alt="display-block">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/display-flex.PNG" alt="display-flex">
+			</picture>
+		</div>
+		<a class="topico__codepen call-to-action" href="https://codepen.io/metalcsgo91/pen/bXvypo" target="_blank">
+			<p>Teste no codepen</p><span>&#8594</span>
+		</a>
+		<div class="topico__abre-video">
+			<span data-video="display-flex" class="call-to-action topico__video-texto">
+				Assista ao video
+			</span>
+			<svg class="topico__icone">
+				<use xlink:href="img/svg-sprite.svg#play"></use>
+			</svg>
+		</div>
+		<div class="topico__video"></div>
+	</section>
+	<section class="topico">
+		<div class="topico__explicacao">
+			<h2 class="topico__titulo titulo-sessao">Flex-Wrap</h2>
+			<p class="topico__texto texto-sessao">
+				Quando o flex container tem um limite de tamanho e os flex-items somados são maiores que esse tamanho, o
+				flex-wrap
+				controla se o item deve ser "empurrado"
+				para a linha de baixo, de cima, ou se ele vai "vazar" pelo container causando um overflow (comportamento
+				padrão).
+			</p>
+			<div class="topico__lista-propriedades">
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-wrap:</span>
+					<span class="valor-propriedade">nowrap;</span><br>
+					<span class="comentario">Se a soma dos flex-items for maior que o tamanho do flex-container então os items não
+						vão conseguir ser exibidos com todo
+						seu tamanho e uma parte do ultimo item vai "vazar" pelo flex-container, é um comportamente que raramente é
+						utilizado.
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-wrap:</span>
+					<span class="valor-propriedade">wrap;</span><br>
+					<span class="comentario">Quando o tamanho dos items somador for maior que o flex-container é normal que
+						definamos a propriedade como "wrap"
+						dessa forma o proprio flex-box calcula o tamanho necessário para que os items caibam na linha e empurra o
+						item que não couber para uma linha abaixo.
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-wrap:</span>
+					<span class="valor-propriedade">wrap-reverse;</span><br>
+					<span class="comentario">Funciona de forma semelhante ao wrap, a diferença é que ele cria uma nova linha acima
+						do conteudo que não coube,
+						e não abaixo.
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="topico__exemplo">
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-wrap-nowrap.PNG" alt="flex-wrap-nowrap">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-wrap-wrap.PNG" alt="flex-wrap-wrap">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-wrap-wrap-reverse.PNG" alt="flex-wrap-wrap-reverse">
+			</picture>
+		</div>
+		<a class="topico__codepen call-to-action" href="https://codepen.io/metalcsgo91/pen/VwZYoXe" target="_blank">
+			<p>Teste no codepen</p><span>&#8594</span>
+		</a>
+		<div class="topico__abre-video">
+			<span data-video="flex-wrap" class="call-to-action topico__video-texto">
+				Assista ao video
+			</span>
+			<svg class="topico__icone">
+				<use xlink:href="img/svg-sprite.svg#play"></use>
+			</svg>
+		</div>
+	</section>
+	<section class="topico">
+		<div class="topico__explicacao">
+			<h2 class="topico__titulo titulo-sessao">Flex-Direction</h2>
+			<p class="topico__texto texto-sessao">
+				Determina qual a direção os items irão se alinhar, podendo ser em linhas ou coluna, tanto na ordem como aparece
+				no HTML ou na ordem inversa
+			</p>
+			<div class="topico__lista-propriedades">
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-direction:</span>
+					<span class="valor-propriedade">row;</span><br>
+					<span class="comentario">O padrão define que os items serão dispostos em linha, um ao lado do outro.
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-direction:</span>
+					<span class="valor-propriedade">column;</span><br>
+					<span class="comentario">Define que os items serão dispostos em colunas, um abaixo do outro. Dessa forma o
+						main axies deixa de ser horizontal
+						e passa a ser vertical, juntamente com suas propriedades.
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-direction:</span>
+					<span class="valor-propriedade">row-reverse;</span><br>
+					<span class="comentario">Os items são colocados do primeiro ao ultimo porém partido do final do container.
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-direction:</span>
+					<span class="valor-propriedade">column-reverse;</span><br>
+					<span class="comentario">Coloca os items um acima do outro, partindo da parte debaixo do container até em
+						cima.
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="topico__exemplo">
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-row.PNG" alt="flex-direction-row">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-reverse.PNG" alt="flex-direction-reverse">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-column.PNG" alt="flex-direction-column">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-column-reverse.PNG" alt="flex-direction-column-reverse">
+			</picture>
+		</div>
+		<a class="topico__codepen call-to-action" href="https://codepen.io/metalcsgo91/pen/VwZYoXe" target="_blank">
+			<p>Teste no codepen</p><span>&#8594</span>
+		</a>
+		<div class="topico__abre-video">
+			<span data-video="flex-direction" class="call-to-action topico__video-texto">
+				Assista ao video
+			</span>
+			<svg class="topico__icone">
+				<use xlink:href="img/svg-sprite.svg#play"></use>
+			</svg>
+		</div>
+	</section>
+	<section class="topico">
+		<div class="topico__explicacao">
+			<h2 class="topico__titulo titulo-sessao">Justify-Content</h2>
+			<p class="topico__texto texto-sessao">
+				Responsavel por alinhar os itens no eixo principal (horizontalmente por padrão), pode se alinhar todos os itens
+				à direita, esquerda, centro
+				ou separar os itens conforme o espaço disponivel no flex-container distribuindo o espaço em branco de três
+				formas diferentes
+			</p>
+			<div class="topico__lista-propriedades">
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">justify-content:</span>
+					<span class="valor-propriedade">flex-start;</span><br>
+					<span class="comentario">Alinha todos os itens no começo do flex-container, cada flex-item fica do tamanho de
+						seu conteudo
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">justify-content:</span>
+					<span class="valor-propriedade">center;</span><br>
+					<span class="comentario">Alinha todos os itens no centro do flex-container
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">justify-content:</span>
+					<span class="valor-propriedade">flex-end;</span><br>
+					<span class="comentario">Alinha todos os itens no final do flex-container
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">justify-content:</span>
+					<span class="valor-propriedade">space-between;</span><br>
+					<span class="comentario">Alinha os itens mantendo um espaço igual entre eles, com o primeiro junto ao inicio
+						do container
+						e o ultimo junto ao final.
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">justify-content:</span>
+					<span class="valor-propriedade">space-around;</span><br>
+					<span class="comentario">Divide o espaço vazio por igual e adiciona nos dois lados dos flex-items tanto
+						esquerda quanto direita
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">justify-content:</span>
+					<span class="valor-propriedade">space-evenly;</span><br>
+					<span class="comentario">Divide os items com espaço igual entre eles, incluindo o espaço entre o primeiro item
+						e o começo do container e o ultimo
+						e o final do container
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="topico__exemplo">
+			<picture class="topico__img-exemplo">
+				<img src="img/justify-content-start.PNG" alt="justify-content-start">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/justify-content-center.PNG" alt="justify-content-center">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/justify-content-end.PNG" alt="justify-content-end">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/justify-content-space-between.PNG" alt="justify-content-space-between">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/justify-content-space-around.PNG" alt="justify-content-space-around">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/justify-content-evenly.png" alt="justify-content-space-evenly">
+			</picture>
+		</div>
+		<a class="topico__codepen call-to-action" href="https://codepen.io/metalcsgo91/pen/VwZYoXe" target="_blank">
+			<p>Teste no codepen</p><span>&#8594</span>
+		</a>
+		<div class="topico__abre-video">
+			<span data-video="justify-content" class="call-to-action topico__video-texto">
+				Assista ao video
+			</span>
+			<svg class="topico__icone">
+				<use xlink:href="img/svg-sprite.svg#play"></use>
+			</svg>
+		</div>
+	</section>
+
+	<!-- JavaScript -->
+	<script src="js/main.js"></script>
+	<!-- JavaScript -->
+
+</body>
+
+</html>

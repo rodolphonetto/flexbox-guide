@@ -1,0 +1,39 @@
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 2 / 41;
+  background-image: linear-gradient(to right bottom, var(--color-2-light), var(--color-2-dark));
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding-top: 3rem;
+
+  &__separador {
+    font-family: 'Blinker', sans-serif;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    margin-bottom: 1rem;
+    color: var(--color-grey-dark-1);
+  }
+
+  &__lista-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    padding: .5rem;
+    font-family: 'Blinker', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--color-grey-light-1);
+    &:not(:last-child) {
+      margin-bottom: .5rem;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}

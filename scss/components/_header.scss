@@ -1,0 +1,5 @@
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  background-image: linear-gradient(to right bottom, var(--color-3-light), var(--color-3-dark));
+}
