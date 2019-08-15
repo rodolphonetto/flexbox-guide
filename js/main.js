@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var videos=document.querySelectorAll(".topico__video"),btnAbreVideo=document.querySelectorAll("#btnVideo"),aberturaVideo=function(e){videos.forEach(function(e){e.classList.add("topico__video--ativo")})};btnAbreVideo.forEach(function(e){var t=e.getAttribute("data-video");e.addEventListener("click",function(){aberturaVideo(t)})});

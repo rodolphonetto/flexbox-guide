@@ -42,7 +42,6 @@
     grid-column: span 2;
     align-self: start;
     justify-self: center;
-
   }
 
   &__codepen {
@@ -74,7 +73,7 @@
     }
     span {
       margin-right: 0.5rem;
-      transition: all 0.3s; 
+      transition: all 0.3s;
     }
     &:hover {
       span {
@@ -84,8 +83,15 @@
   }
 
   &__video {
+    display: none;
+    height: 0;
     grid-column: col-start 3 / col-end 8;
     margin-top: 3rem;
     height: 400px;
+    transition: all 0.3s;
+    &--ativo {
+      display: block;
+      height: auto;
+    }
   }
 }
