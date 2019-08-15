@@ -7,36 +7,30 @@ html {
 }
 
 :root {
-  --color-1-light: #216583;
-  --color-1-dark: #19495e;
+--color-1: #3d8af7;
+--color-2: #2effa1;
+--color-3: #00214d;
 
-  --color-2-light: #f76262;
-  --color-2-dark: #f43333;
-  --color-2-font: #faa4a4;
+--color-grey-light-1: #faf9f9;
+--color-grey-light-2: #f4f2f2;
+--color-grey-light-3: #f0eeee;
+--color-grey-light-4: rgba(204, 204, 204, 0.548);
 
-  --color-3-light: #293462;
-  --color-3-dark: #1e2647;
+--color-grey-dark-1: #333;
+--color-grey-dark-2: #777;
+--color-grey-dark-3: #999;
 
-  --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
-  --color-grey-light-3: #f0eeee;
-  --color-grey-light-4: rgba(204, 204, 204, 0.247);
+--shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+--shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 
-  --color-grey-dark-1: #333;
-  --color-grey-dark-2: #777;
-  --color-grey-dark-3: #999;
-
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
-
-  --line: 1px solid var(--color-grey-light-4);
+--line: 1px solid var(--color-grey-light-4);
 }
 
 .container {
   display: grid;
   grid-template-columns: [sidebar-start] 20rem [sidebar-end content-start] 1fr repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) 1fr [content-end];
-  grid-template-rows: 10rem min-content;
-  background: var(--color-1-light);
+  grid-template-rows: 12rem min-content;
+  background: var(--color-grey-light-1);
   background-repeat: no-repeat;
   background-size: cover;
 }

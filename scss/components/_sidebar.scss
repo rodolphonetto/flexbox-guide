@@ -1,7 +1,7 @@
 .sidebar {
   grid-column: sidebar-start / sidebar-end;
   grid-row: 2 / 41;
-  background-image: linear-gradient(to right bottom, var(--color-2-light), var(--color-2-dark));
+  background-color: var(--color-2);
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -27,7 +27,7 @@
     font-family: 'Blinker', sans-serif;
     font-size: 1.8rem;
     line-height: 1.8rem;
-    color: var(--color-grey-light-1);
+    color: var(--color-grey-dark-2);
     &:not(:last-child) {
       margin-bottom: .5rem;
     }
