@@ -60,10 +60,13 @@
 			<p>Teste no codepen</p><span>&#8594</span>
 		</a>
 		<div class="topico__abre-video call-to-action">
-			<p id="btnVideo" data-video="display-flex">Assista ao video</p><span>&#8595</span>
+			<p id="btnVideo"
+				data-video="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1">
+				Assista ao video</p><span>&#8595</span>
 		</div>
-		<div class="topico__video video-container">
-			<iframe id="videoEvento" width="853" height="480"
+		<div data-video="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
+			class="topico__video video-container">
+			<iframe id="videoAula" width="853" height="480"
 				src="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
 				allowfullscreen>
 			</iframe>
@@ -119,15 +122,18 @@
 				<img src="img/flex-wrap-wrap-reverse.PNG" alt="flex-wrap-wrap-reverse">
 			</picture>
 		</div>
-		<a class="topico__codepen call-to-action" href="https://codepen.io/metalcsgo91/pen/VwZYoXe" target="_blank">
+		<a class="topico__codepen call-to-action" href="https://codepen.io/rodolphonetto/pen/LYPpyzZ" target="_blank">
 			<p>Teste no codepen</p><span>&#8594</span>
 		</a>
 		<div class="topico__abre-video call-to-action">
-			<p id="btnVideo" data-video="display-flex">Assista ao video</p><span>&#8595</span>
+			<p id="btnVideo"
+				data-video="https://www.youtube.com/embed/cK193uUwv7g?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1">
+				Assista ao video</p><span>&#8595</span>
 		</div>
-		<div class="topico__video video-container">
-			<iframe id="videoEvento" width="853" height="480"
-				src="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
+		<div data-video="https://www.youtube.com/embed/cK193uUwv7g?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
+			class="topico__video video-container">
+			<iframe id="videoAula" width="853" height="480"
+				src="https://www.youtube.com/embed/cK193uUwv7g?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
 				allowfullscreen>
 			</iframe>
 		</div>
@@ -187,10 +193,10 @@
 			<p>Teste no codepen</p><span>&#8594</span>
 		</a>
 		<div class="topico__abre-video call-to-action">
-			<p id="btnVideo" data-video="display-flex">Assista ao video</p><span>&#8595</span>
+			<p id="btnVideo" data-video="flex-direction">Assista ao video</p><span>&#8595</span>
 		</div>
-		<div class="topico__video video-container">
-			<iframe id="videoEvento" width="853" height="480"
+		<div data-video="flex-direction" class="topico__video video-container">
+			<iframe id="videoAula" width="853" height="480"
 				src="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
 				allowfullscreen>
 			</iframe>
@@ -274,10 +280,86 @@
 			<p>Teste no codepen</p><span>&#8594</span>
 		</a>
 		<div class="topico__abre-video call-to-action">
-			<p id="btnVideo" data-video="display-flex">Assista ao video</p><span>&#8595</span>
+			<p id="btnVideo" data-video="justify-content">Assista ao video</p><span>&#8595</span>
 		</div>
-		<div class="topico__video video-container">
-			<iframe id="videoEvento" width="853" height="480"
+		<div data-video="justify-content" class="topico__video video-container">
+			<iframe id="videoAula" width="853" height="480"
+				src="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
+				allowfullscreen>
+			</iframe>
+		</div>
+	</section>
+	<section class="topico">
+		<div class="topico__explicacao">
+			<h2 class="topico__titulo titulo-sessao">Align-Items</h2>
+			<p class="topico__texto texto-sessao">
+				Responsavel pelo alinhamento entre os flex-items (verticalmente por padrão) podemos dessa forma colocar os itens
+				centralizados entre si, além de
+				alinha-los pelo começo, final, pelo baseline ou então deixar com quem eles estiquem desde o começo do
+				container até o final
+			</p>
+			<div class="topico__lista-propriedades">
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">align-items:</span>
+					<span class="valor-propriedade">stretch;</span><br>
+					<span class="comentario">Alinha todos os itens no começo do flex-container, cada flex-item fica do tamanho de
+						seu conteudo
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">align-items:</span>
+					<span class="valor-propriedade">flex-start;</span><br>
+					<span class="comentario">Alinha todos os itens no centro do flex-container
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">align-items:</span>
+					<span class="valor-propriedade">center;</span><br>
+					<span class="comentario">Alinha todos os itens no final do flex-container
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">align-items:</span>
+					<span class="valor-propriedade">flex-end;</span><br>
+					<span class="comentario">Alinha os itens mantendo um espaço igual entre eles, com o primeiro junto ao inicio
+						do container
+						e o ultimo junto ao final.
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">align-items:</span>
+					<span class="valor-propriedade">baseline;</span><br>
+					<span class="comentario">Divide o espaço vazio por igual e adiciona nos dois lados dos flex-items tanto
+						esquerda quanto direita
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="topico__exemplo">
+			<picture class="topico__img-exemplo">
+				<img src="img/align-items-stretch.PNG" alt="align-items-stretch">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/align-items-flex-start.PNG" alt="align-items-flex-start">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/align-items-center.PNG" alt="align-items-center">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/align-items-flex-end.PNG" alt="align-items-flex-end">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/align-items-baseline.PNG" alt="align-items-baseline">
+			</picture>
+		</div>
+		<a class="topico__codepen call-to-action" href="https://codepen.io/rodolphonetto/pen/KKPMNZy" target="_blank">
+			<p>Teste no codepen</p><span>&#8594</span>
+		</a>
+		<div class="topico__abre-video call-to-action">
+			<p id="btnVideo" data-video="justify-content">Assista ao video</p><span>&#8595</span>
+		</div>
+		<div data-video="justify-content" class="topico__video video-container">
+			<iframe id="videoAula" width="853" height="480"
 				src="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
 				allowfullscreen>
 			</iframe>
