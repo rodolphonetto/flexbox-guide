@@ -31,6 +31,15 @@
 			<li id="interno" data-link="align-items" class="sidebar__item">Align-Items</li>
 			<li id="interno" data-link="direction" class="sidebar__item">Flex-Direction</li>
 		</ul>
+		<span class="sidebar__separador">Flex-Item</span>
+		<ul class="sidebar__lista-items">
+			<li class=" sidebar__item">Flex-Basis</li>
+			<li class="sidebar__item"></li>
+			<li class="sidebar__item"></li>
+			<li class="sidebar__item"></li>
+			<li class="sidebar__item"></li>
+			<li class="sidebar__item"></li>
+		</ul>
 	</nav>
 
 	<section data-link="flex" class="topico">
@@ -336,6 +345,225 @@
 					<span class="valor-propriedade">column-reverse;</span><br>
 					<span class="comentario">Coloca os items um acima do outro, partindo da parte debaixo do container até em
 						cima.
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="topico__exemplo">
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-row.PNG" alt="flex-direction-row">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-reverse.PNG" alt="flex-direction-reverse">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-column.PNG" alt="flex-direction-column">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-column-reverse.PNG" alt="flex-direction-column-reverse">
+			</picture>
+		</div>
+		<a class="topico__codepen call-to-action" href="https://codepen.io/metalcsgo91/pen/VwZYoXe" target="_blank">
+			<p>Teste no codepen</p><span>&#8594</span>
+		</a>
+		<div class="topico__abre-video call-to-action">
+			<p id="btnVideo" data-video="flex-direction">Assista ao video</p><span>&#8595</span>
+		</div>
+		<div data-video="flex-direction" class="topico__video video-container">
+			<iframe id="videoAula" width="853" height="480"
+				src="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
+				allowfullscreen>
+			</iframe>
+		</div>
+	</section>
+
+	<section data-link="grow" class="topico">
+		<div class="topico__explicacao">
+			<h2 class="topico__titulo titulo-sessao">Flex-Grow</h2>
+			<p class="topico__texto texto-sessao">
+				Caso o tamanho do container seja maior que a soma do conteudo dos items, o flex-grow controla como cada item
+				deverá ocupar o valor restante no container
+			</p>
+			<div class="topico__lista-propriedades">
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-grow:</span>
+					<span class="valor-propriedade">1;</span><br>
+					<span class="comentario">Faz com que os items dividam o espaço restante entre si de forma igual até ocupar
+						todo o container </span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-grow:</span>
+					<span class="valor-propriedade">1 / 2;</span><br>
+					<span class="comentario">Caso nós definamos flex-grow 1 para um item e flex-grow 2 para outro item, o segundo
+						item recebe o dobro do espaço restante em relação ao primeiro. Caso definamos 3, ele recebe o triplo e assim
+						por diante.
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="topico__exemplo">
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-row.PNG" alt="flex-direction-row">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-reverse.PNG" alt="flex-direction-reverse">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-column.PNG" alt="flex-direction-column">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-column-reverse.PNG" alt="flex-direction-column-reverse">
+			</picture>
+		</div>
+		<a class="topico__codepen call-to-action" href="https://codepen.io/metalcsgo91/pen/VwZYoXe" target="_blank">
+			<p>Teste no codepen</p><span>&#8594</span>
+		</a>
+		<div class="topico__abre-video call-to-action">
+			<p id="btnVideo" data-video="flex-direction">Assista ao video</p><span>&#8595</span>
+		</div>
+		<div data-video="flex-direction" class="topico__video video-container">
+			<iframe id="videoAula" width="853" height="480"
+				src="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
+				allowfullscreen>
+			</iframe>
+		</div>
+	</section>
+
+	<section data-link="basis" class="topico">
+		<div class="topico__explicacao">
+			<h2 class="topico__titulo titulo-sessao">Flex-Basis</h2>
+			<p class="topico__texto texto-sessao">
+				Determina o "valor base" de um item antes que o espaço restante no container seja distribuido, só funciona caso
+				o flex-grow esteja definido como
+				1 ou maior
+			</p>
+			<div class="topico__lista-propriedades">
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-basis:</span>
+					<span class="valor-propriedade">auto;</span><br>
+					<span class="comentario">Caso não seja especificado nenhum tamanho para o item ele será do tamanho de seu
+						conteudo, é a propriedade padrão </span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-basis:</span>
+					<span class="valor-propriedade">(100px, 10rem, 50%);</span><br>
+					<span class="comentario">Define o tamanho do item antes do espaço que sobra entre a soma dos itens e o
+						tamanho do container seja distribuido pelo flex-grow
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-direction:</span>
+					<span class="valor-propriedade">column-reverse;</span><br>
+					<span class="comentario">Coloca os items um acima do outro, partindo da parte debaixo do container até em
+						cima.
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="topico__exemplo">
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-row.PNG" alt="flex-direction-row">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-reverse.PNG" alt="flex-direction-reverse">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-column.PNG" alt="flex-direction-column">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-column-reverse.PNG" alt="flex-direction-column-reverse">
+			</picture>
+		</div>
+		<a class="topico__codepen call-to-action" href="https://codepen.io/metalcsgo91/pen/VwZYoXe" target="_blank">
+			<p>Teste no codepen</p><span>&#8594</span>
+		</a>
+		<div class="topico__abre-video call-to-action">
+			<p id="btnVideo" data-video="flex-direction">Assista ao video</p><span>&#8595</span>
+		</div>
+		<div data-video="flex-direction" class="topico__video video-container">
+			<iframe id="videoAula" width="853" height="480"
+				src="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
+				allowfullscreen>
+			</iframe>
+		</div>
+	</section>
+
+	<section data-link="shrink" class="topico">
+		<div class="topico__explicacao">
+			<h2 class="topico__titulo titulo-sessao">Flex-Shrink</h2>
+			<p class="topico__texto texto-sessao">
+				O oposto do flex-grow, caso o tamanho do container seja menor que a soma do width ou do flex-basis dos items o
+				flex-shrink define como os items iram diminuir para caberem na linha do container
+			</p>
+			<div class="topico__lista-propriedades">
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-shrink:</span>
+					<span class="valor-propriedade">1;</span><br>
+					<span class="comentario">Faz com que os items diminuam na mesma proporção até que caibam no container</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex-shrink:</span>
+					<span class="valor-propriedade">1 / 2;</span><br>
+					<span class="comentario">Caso nós definamos flex-shrink 1 para um item e flex-shrink 2 para outro item, o
+						segundo item vai diminuir duas vezes mais que o primeiro item até que ambos caibam no container.
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="topico__exemplo">
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-row.PNG" alt="flex-direction-row">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-reverse.PNG" alt="flex-direction-reverse">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-column.PNG" alt="flex-direction-column">
+			</picture>
+			<picture class="topico__img-exemplo">
+				<img src="img/flex-direction-column-reverse.PNG" alt="flex-direction-column-reverse">
+			</picture>
+		</div>
+		<a class="topico__codepen call-to-action" href="https://codepen.io/metalcsgo91/pen/VwZYoXe" target="_blank">
+			<p>Teste no codepen</p><span>&#8594</span>
+		</a>
+		<div class="topico__abre-video call-to-action">
+			<p id="btnVideo" data-video="flex-direction">Assista ao video</p><span>&#8595</span>
+		</div>
+		<div data-video="flex-direction" class="topico__video video-container">
+			<iframe id="videoAula" width="853" height="480"
+				src="https://www.youtube.com/embed/4pY7e8sOy74?controls=1&modestbranding=1&hd=1&showinfo=0&rel=0&fs=1"
+				allowfullscreen>
+			</iframe>
+		</div>
+	</section>
+
+	<section data-link="flex" class="topico">
+		<div class="topico__explicacao">
+			<h2 class="topico__titulo titulo-sessao">Flex</h2>
+			<p class="topico__texto texto-sessao">
+				Flex é um atalho muito comum para as três propriedades apresentadas anteriormente. A ordem de definição é:
+				flex-grow, flex-shrink e flex-basis
+			</p>
+			<div class="topico__lista-propriedades">
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex:</span>
+					<span class="valor-propriedade">flex: 3 2 300px;</span><br>
+					<span class="comentario">Dessa forma o flex-grow é definido para 3, o flex-shrink para 2 e o flex-basis para
+						300px </span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex:</span>
+					<span class="valor-propriedade">1;</span><br>
+					<span class="comentario">Definindo apenas o flex como 1, o flex-grow fica como 1, o flex-shrink 1 e o basis
+						como 0 (assim todos os itens crescem e diminuem por igual)
+					</span>
+				</div>
+				<div class="topico__propriedade">
+					<span class="nome-propriedade">flex:</span>
+					<span class="valor-propriedade">2;</span><br>
+					<span class="comentario">Definindo apenas o flex como 2, o flex-grow fica como 2, mas o flex-shrink continuará
+						como 1 e o flex-basis continuará como 0, dessa forma só afetamos o crescimento do item
 					</span>
 				</div>
 			</div>
